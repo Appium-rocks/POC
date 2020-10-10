@@ -22,20 +22,7 @@ public void launchApp(String sAppName) throws Exception{
      dc.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, ".LoginActivity");
      TestBase.driver = new AndroidDriver<WebElement>(new URL("https://cloud.seetest.io/wd/hub"), dc);
  
-//		DesiredCapabilities cap = new DesiredCapabilities();
-//		cap.setCapability(MobileCapabilityType.PLATFORM_NAME, "ANDROID");//"platformName"
-//		//cap.setCapability(MobileCapabilityType.DEVICE_NAME,"Android Emulator");
-//		
-//		
-//		cap.setCapability(MobileCapabilityType.DEVICE_NAME, "emulator-5554");
-//		
-//			cap.setCapability("appPackage", "com.planbsys.SIQ");
-//			cap.setCapability("appActivity",  "com.planbsys.SIQ.MainActivity");
-//		
-//		
-//		TestBase.driver = new AndroidDriver<WebElement>(new URL("http://0.0.0.0:4723/wd/hub"), cap);
-//		System.out.println("App Launched");
-//		
+
 		}
 }
 

@@ -15,7 +15,7 @@ public class TestBase {
 	public static CommonUtilities oU_Comm = new CommonUtilities();
 	
 	
-
+	@BeforeSuite
 	public void TriggerinBeforeSuiteDependency() throws Exception{
 		oU_Comm.loadPropertyFiles(System.getProperty("user.dir")+"/conf.properties");
 		oU_Android.launchApp(System.getProperty("appNameToLaunch"));

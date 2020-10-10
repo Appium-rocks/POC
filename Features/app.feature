@@ -1,4 +1,4 @@
-Feature: Bank Application Under Test
+Feature: eriBank Application Under Test
   As a user of the bank
   I want to login to the app
   So i can do further transactions

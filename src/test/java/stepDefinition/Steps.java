@@ -9,9 +9,16 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
 public class Steps extends TestBase {
+	
+	static int counter=1;
+	
 	@Given("^i launched the app$")
 	public void i_launched_the_app() throws Throwable {
+		if(counter==1) {
 	    TriggerinBeforeSuiteDependency();
+	    counter++;
+		}
+		
 	    
 	}
 
@@ -74,6 +81,7 @@ public class Steps extends TestBase {
 
 	@Then("^i am logging off$")
 	public void i_am_logging_off() throws Throwable {
+	  driver.findElement(By.xpath("//*[@text='Logout']")).click();
 	  
 	}
 
