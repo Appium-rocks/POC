@@ -132,17 +132,19 @@ public class Steps extends TestBase {
 
 	@When("^i click on Expense Report$")
 	public void i_click_on_Expense_Report() throws Throwable {
-	    
+		driver.findElement(By.xpath("//*[@text='Expense Report']")).click();
 	}
 
 	@When("^i click on add Expense$")
 	public void i_click_on_add_Expense() throws Throwable {
-	    
+		driver.findElement(By.xpath("//*[@text='Add']")).click();
 	}
 
 	@Then("^i am able to add the expense$")
 	public void i_am_able_to_add_the_expense() throws Throwable {
-	   	}
+		String expense=driver.findElement(By.xpath("//*[@text='Expense : 2']")).getText();
+		Assert.assertEquals("Expense : 2", expense );
+		driver.findElement(By.xpath("//*[@text='Back']")).click();
 
 	@Then("^i close the application$")
 	public void i_close_the_application() throws Throwable {
