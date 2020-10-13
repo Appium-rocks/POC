@@ -1,5 +1,7 @@
 package stepDefinition;
 
+import io.appium.java_client.TouchAction;
+import io.appium.java_client.android.AndroidElement;
 import org.openqa.selenium.By;
 import org.openqa.selenium.ScreenOrientation;
 
@@ -7,6 +9,10 @@ import Utility.TestBase;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.HasInputDevices;
+import org.openqa.selenium.interactions.touch.TouchActions;
 
 public class Steps extends TestBase {
 	
@@ -66,17 +72,56 @@ public class Steps extends TestBase {
 	}
 	@When("^i click on Mortgage Request$")
 	public void i_click_on_Mortgage_Request() throws Throwable {
-	    
+
+		Thread.sleep(1000);
+		driver.findElement(By.xpath("//*[@id='mortageRequestButton']")).click();
 	}
 
 	@When("^i fill out all the details$")
 	public void i_fill_out_all_the_details() throws Throwable {
-	    
+
+
+		driver.findElement(By.xpath("//*[@id='nameTextField']")).sendKeys("Sridhar");
+		driver.findElement(By.xpath("//*[@id='lastNameTextField']")).sendKeys("Yerasi");
+		driver.findElement(By.xpath("//*[@id='ageTextField']")).sendKeys("35");
+		driver.findElement(By.xpath("//*[@id='addressOneTextField']")).sendKeys("801 Locust PL NE");
+		driver.findElement(By.xpath("//*[@id='addressTwoTextField']")).sendKeys("Albuquerque NM");
+
+		driver.findElement(By.xpath("//*[@id='countryButton']")).click();
+		driver.findElement(By.xpath("//*[@text='India']")).click();
+
+		driver.findElement(By.xpath("//*[@id='nextButton']")).click();
+
+
+
 	}
 
 	@Then("^i am able to make a loan request$")
 	public void i_am_able_to_make_a_loan_request() throws Throwable {
-	    
+
+		driver.findElement(By.xpath("//*[@text='Car']")).click();
+
+		driver.findElement(By.xpath("//*[@text='5']")).click();
+
+
+		String uiSelector = "new UiSelector().textMatches(\"" + "Private Job"
+				+ "\")";
+		String command = "new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView("
+				+ uiSelector + ");";
+		driver.findElementByAndroidUIAutomator(command);
+		driver.findElement(By.xpath("//*[@text='Private Job']")).click();
+
+
+		String uiSelector1 = "new UiSelector().textMatches(\"" + "2,500,000"
+				+ "\")";
+		String command1 = "new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView("
+				+ uiSelector1 + ");";
+		driver.findElementByAndroidUIAutomator(command1);
+		driver.findElement(By.xpath("//*[@text='2,500,000']")).click();
+		Thread.sleep(1000);
+		driver.findElement(By.xpath("//*[@id='saveButton']")).click();
+		Thread.sleep(1000);
+
 	}
 
 	@Then("^i am logging off$")

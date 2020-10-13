@@ -16,7 +16,7 @@ public void launchApp(String sAppName) throws Exception{
      DesiredCapabilities dc = new DesiredCapabilities();
      dc.setCapability("testName", "Quick Start Android Native Demo");
      dc.setCapability("accessKey", accessKey);
-     dc.setCapability("deviceQuery", "@os='android' and @serialnumber='ZX1C22GBLV'");
+     dc.setCapability("deviceQuery", "@os='android' and @serialnumber='ZY322RJP7V'");
      dc.setCapability(MobileCapabilityType.APP, "cloud:com.experitest.ExperiBank/.LoginActivity");
      dc.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "com.experitest.ExperiBank");
      dc.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, ".LoginActivity");

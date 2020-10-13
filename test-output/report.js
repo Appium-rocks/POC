@@ -1,9 +1,9 @@
 $(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("./Features/app.feature");
 formatter.feature({
   "line": 1,
-  "name": "Bank Application Under Test",
-  "description": "As a user of the bank\nI want to login to the app\nSo i can do further transactions",
-  "id": "bank-application-under-test",
+  "name": "eriBank Application Under Test",
+  "description": "As a user of the bank\r\nI want to login to the app\r\nSo i can do further transactions",
+  "id": "eribank-application-under-test",
   "keyword": "Feature"
 });
 formatter.background({
@@ -37,7 +37,7 @@ formatter.match({
   "location": "Steps.i_launched_the_app()"
 });
 formatter.result({
-  "duration": 42370644361,
+  "duration": 50513032900,
   "status": "passed"
 });
 formatter.match({
@@ -50,7 +50,7 @@ formatter.match({
   "location": "Steps.i_enter_the_user_name_as(String)"
 });
 formatter.result({
-  "duration": 6343626393,
+  "duration": 6885682400,
   "status": "passed"
 });
 formatter.match({
@@ -63,21 +63,21 @@ formatter.match({
   "location": "Steps.i_enter_the_password_as(String)"
 });
 formatter.result({
-  "duration": 996679809,
+  "duration": 3163332900,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.i_am_logged_in()"
 });
 formatter.result({
-  "duration": 971481474,
+  "duration": 3123403900,
   "status": "passed"
 });
 formatter.scenario({
   "line": 13,
   "name": "I am trying to make payment",
   "description": "",
-  "id": "bank-application-under-test;i-am-trying-to-make-payment",
+  "id": "eribank-application-under-test;i-am-trying-to-make-payment",
   "type": "scenario",
   "keyword": "Scenario"
 });
@@ -110,7 +110,7 @@ formatter.match({
   "location": "Steps.i_click_on_Make_Payment()"
 });
 formatter.result({
-  "duration": 4583518865,
+  "duration": 3197310200,
   "status": "passed"
 });
 formatter.match({
@@ -135,28 +135,28 @@ formatter.match({
   "location": "Steps.i_enter(String,String,String,String)"
 });
 formatter.result({
-  "duration": 5492285622,
+  "duration": 15996389000,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.i_hit_Send_Payment()"
 });
 formatter.result({
-  "duration": 1159194337,
+  "duration": 3124367400,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.i_am_able_to_make_a_payment()"
 });
 formatter.result({
-  "duration": 1099355117,
+  "duration": 3034613300,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.i_am_logging_off()"
 });
 formatter.result({
-  "duration": 1416852731,
+  "duration": 3103774200,
   "status": "passed"
 });
 formatter.background({
@@ -190,7 +190,7 @@ formatter.match({
   "location": "Steps.i_launched_the_app()"
 });
 formatter.result({
-  "duration": 108482,
+  "duration": 247000,
   "status": "passed"
 });
 formatter.match({
@@ -203,7 +203,7 @@ formatter.match({
   "location": "Steps.i_enter_the_user_name_as(String)"
 });
 formatter.result({
-  "duration": 5148545131,
+  "duration": 6709009500,
   "status": "passed"
 });
 formatter.match({
@@ -216,21 +216,21 @@ formatter.match({
   "location": "Steps.i_enter_the_password_as(String)"
 });
 formatter.result({
-  "duration": 965204200,
+  "duration": 3097930300,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.i_am_logged_in()"
 });
 formatter.result({
-  "duration": 980837906,
+  "duration": 3061821600,
   "status": "passed"
 });
 formatter.scenario({
   "line": 22,
   "name": "I am trying to make a Mortgage Request",
   "description": "",
-  "id": "bank-application-under-test;i-am-trying-to-make-a-mortgage-request",
+  "id": "eribank-application-under-test;i-am-trying-to-make-a-mortgage-request",
   "type": "scenario",
   "keyword": "Scenario"
 });
@@ -258,28 +258,28 @@ formatter.match({
   "location": "Steps.i_click_on_Mortgage_Request()"
 });
 formatter.result({
-  "duration": 37011,
+  "duration": 4102862900,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.i_fill_out_all_the_details()"
 });
 formatter.result({
-  "duration": 27877,
+  "duration": 25949514400,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.i_am_able_to_make_a_loan_request()"
 });
 formatter.result({
-  "duration": 18206,
+  "duration": 29754597200,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.i_am_logging_off()"
 });
 formatter.result({
-  "duration": 1313741160,
+  "duration": 3161084800,
   "status": "passed"
 });
 formatter.background({
@@ -313,7 +313,7 @@ formatter.match({
   "location": "Steps.i_launched_the_app()"
 });
 formatter.result({
-  "duration": 79429,
+  "duration": 95700,
   "status": "passed"
 });
 formatter.match({
@@ -326,7 +326,7 @@ formatter.match({
   "location": "Steps.i_enter_the_user_name_as(String)"
 });
 formatter.result({
-  "duration": 4137053301,
+  "duration": 7708319500,
   "status": "passed"
 });
 formatter.match({
@@ -339,21 +339,21 @@ formatter.match({
   "location": "Steps.i_enter_the_password_as(String)"
 });
 formatter.result({
-  "duration": 883824815,
+  "duration": 3842755200,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.i_am_logged_in()"
 });
 formatter.result({
-  "duration": 979489799,
+  "duration": 3081712300,
   "status": "passed"
 });
 formatter.scenario({
   "line": 28,
   "name": "I am trying to make an Expense Report",
   "description": "",
-  "id": "bank-application-under-test;i-am-trying-to-make-an-expense-report",
+  "id": "eribank-application-under-test;i-am-trying-to-make-an-expense-report",
   "type": "scenario",
   "keyword": "Scenario"
 });
@@ -386,35 +386,35 @@ formatter.match({
   "location": "Steps.i_click_on_Expense_Report()"
 });
 formatter.result({
-  "duration": 29518,
+  "duration": 67800,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.i_click_on_add_Expense()"
 });
 formatter.result({
-  "duration": 23497,
+  "duration": 57500,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.i_am_able_to_add_the_expense()"
 });
 formatter.result({
-  "duration": 19515,
+  "duration": 63600,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.i_am_logging_off()"
 });
 formatter.result({
-  "duration": 1364145112,
+  "duration": 3346919400,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.i_close_the_application()"
 });
 formatter.result({
-  "duration": 9161341610,
+  "duration": 19127215000,
   "status": "passed"
 });
 });
